@@ -1,19 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "reset";
+@import "sizes";
 
 .default {
-  margin: 1rem 0;
-  padding: 0 1rem;
+  margin: 0 $reg;
+  padding: $reg 0;
 }
 
 .big {
-  font-size: 4rem;
+  font: {
+    size: $xlarge;
+  }
 }
 
 .small {
-  font-size: 0.75rem;
+  font: {
+    size: $small;
+  }
 }
 
