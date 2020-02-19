@@ -1,3 +1,8 @@
+function makeSection() {
+  var s = document.createElement("section");
+  document.body.insertAdjacentElement("afterbegin", s);
+}
+
 function makeHeadH() {
   var headSec = document.getElementById("header");
   var h = document.createElement("h1");
@@ -5,13 +10,6 @@ function makeHeadH() {
   h.className = "default big";
   headSec.appendChild(h);
 }
-
-function makeMainPara() {
-  var mainSec = document.getElementById("main");
-  var para = document.createElement("p");
-  para.className = "pExternal default";
-  mainSec.appendChild(para);
-}  
 
 function makeCopyPara() {
   var copySec = document.getElementById("copyright");
@@ -21,16 +19,16 @@ function makeCopyPara() {
   copySec.appendChild(para);
 }
 
+document.onload = makeSection();
+document.onload = makeSection();
+document.onload = makeSection();
+
+$("section").eq(0).attr("id", "header");
+$("section").eq(1).attr("id", "main");
+$("section").eq(2).attr("id", "copyright");
+
 document.onload = makeHeadH();
-document.onload = makeMainPara();
-document.onload = makeMainPara();
-document.onload = makeMainPara();
-document.onload = makeMainPara();
 document.onload = makeCopyPara();
 
 $("#hExternal").load("head.txt");
-$(".pExternal").eq(0).load("main.txt");
-$(".pExternal").eq(1).load("main-sub1.txt");
-$(".pExternal").eq(2).load("main-sub2.txt");
-$(".pExternal").eq(3).load("main-sub3.txt");
 $("#copyExternal").load("copy.txt");

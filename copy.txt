@@ -1,1 +1,1 @@
-Copyright &copy; 2020 Moonshot Design Co.
+Copyright &copy; 2020 Moonshot Design Co.<br>JavaScript fuckin rules
