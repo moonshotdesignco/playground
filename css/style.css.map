@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/_reset.scss","../scss/style.scss","../scss/_sizes.scss","../scss/_colors.scss"],"names":[],"mappings":"AAAA;AAAA;EAEE;EACA;;;ACCF;EACE;EACA;;;AAGF;EAEI,WCTK;;;ADaT;EAEI,WCbI;;;ADiBR;EACE;EACA;;;AAGF;EACE;EACA;EACA;;AACA;EACE;EACA;EACA;EACA,YE9BQ;EF+BR;EACA;;AAEF;EACE,YErCG","file":"style.css"}

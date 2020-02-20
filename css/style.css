@@ -22,15 +22,12 @@ body {
   height: 100%;
 }
 
-.navList {
+#navList {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.navList li {
-  display: unset;
-}
-.navList li a {
+#navList li {
   display: inline-block;
   padding: 0.75rem 2rem;
   border: 0.375rem solid #444444;
@@ -38,7 +35,7 @@ body {
   text-decoration: none;
   color: initial;
 }
-.navList li a:hover {
+#navList li:hover {
   background: #888888;
 }
 

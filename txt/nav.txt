@@ -1,7 +1,8 @@
-<ul class="navList">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="page2.html">Page 2</a></li>
-  <li><a href="page3.html">Page 3</a></li>
-  <li><a href="page4.html">Page 4</a></li>
-  <li><a href="lastpage.html">Last Page</a></li>
+<h2>Navigation</h2>
+<ul id="navList">
+  <li id="navHome" onclick="sceneSwitch(), mainPage()">Home</li>
+  <li id="nav2" onclick="sceneSwitch(), page2()">Page 2</li>
+  <li id="nav3" onclick="sceneSwitch(), page3()">Page 3</li>
+  <li id="nav4" onclick="sceneSwitch(), page4()">Page 4</li>
+  <li id="navLast" onclick="sceneSwitch(), lastPage()">Last Page</li>
 </ul>

@@ -24,22 +24,19 @@
   height: 100%;
 }
 
-.navList {
+#navList {
   margin: 0;
   padding: 0;
   list-style-type: none;
   li {
-    display: unset;
-    a {
-      display: inline-block;
-      padding: $small $large;
-      border: $xxsmall solid $darkgray;
-      background: $lightgray;
-      text-decoration: none;
-      color: initial;
-    }
-    a:hover {
-      background: $gray;
-    }
+    display: inline-block;
+    padding: $small $large;
+    border: $xxsmall solid $darkgray;
+    background: $lightgray;
+    text-decoration: none;
+    color: initial;
+  }
+  li:hover {
+    background: $gray;
   }
 }
