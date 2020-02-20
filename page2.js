@@ -1,12 +1,8 @@
-function makeMainPara() {
-  var mainSec = document.getElementById("main");
-  var para = document.createElement("p");
-  para.className = "pExternal default";
-  mainSec.appendChild(para);
+var i;
+var paraCount = 1;
+for (i = 1; i <= paraCount; i++) {
+  makeMainPara();
 }
-
-document.onload = makeMainPara();
-document.onload = makeMainPara();
 
 var imgPara = document.getElementsByClassName("pExternal")[0];
 imgPara.id = "gallery";
@@ -17,16 +13,14 @@ function makeImg() {
   document.getElementById("gallery").appendChild(newImg);
 }
 
-document.onload = makeImg();
-document.onload = makeImg();
-document.onload = makeImg();
-document.onload = makeImg();
-document.onload = makeImg();
+var i;
+var galleryCount = 5;
+for (i = 1; i <= galleryCount; i++) {
+  makeImg();
+}
 
-$(".page2image").eq(0).attr("src", "01.jpg");
-$(".page2image").eq(1).attr("src", "02.jpg");
-$(".page2image").eq(2).attr("src", "03.jpg");
-$(".page2image").eq(3).attr("src", "04.jpg");
-$(".page2image").eq(4).attr("src", "05.jpg");
-
-$(".pExternal").eq(1).load("nav.html");
+var imgArray = document.getElementsByClassName("page2image");
+var n;
+for (n = 0; n < imgArray.length; n++) {
+  imgArray[n].setAttribute("src", n + 1 + ".jpg");
+}

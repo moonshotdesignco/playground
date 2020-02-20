@@ -1,12 +1,7 @@
-function makeMainPara() {
-  var mainSec = document.getElementById("main");
-  var para = document.createElement("p");
-  para.className = "pExternal default";
-  mainSec.appendChild(para);
+var i;
+var paraCount = 1;
+for (i = 1; i <= paraCount; i++) {
+  makeMainPara();
 }
 
-document.onload = makeMainPara();
-document.onload = makeMainPara();
-
 $(".pExternal").eq(0).load("main-sub3.txt");
-$(".pExternal").eq(1).load("nav.html");
