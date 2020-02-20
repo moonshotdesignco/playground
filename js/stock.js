@@ -49,6 +49,6 @@ document.onload = makeHeadH();
 document.onload = makeNavPara();
 document.onload = makeCopyPara();
 
-$("#hExternal").load("head.txt");
-$("#navExternal").load("nav.html");
-$("#copyExternal").load("copy.txt");
+$("#hExternal").load("txt/head.txt");
+$("#navExternal").load("txt/nav.txt");
+$("#copyExternal").load("txt/copy.txt");

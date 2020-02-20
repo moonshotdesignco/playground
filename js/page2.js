@@ -22,5 +22,5 @@ for (i = 1; i <= galleryCount; i++) {
 var imgArray = document.getElementsByClassName("page2image");
 var n;
 for (n = 0; n < imgArray.length; n++) {
-  imgArray[n].setAttribute("src", n + 1 + ".jpg");
+  imgArray[n].setAttribute("src", "img/" + (n + 1) + ".jpg");
 }

@@ -1,5 +1,6 @@
 @import "reset";
 @import "sizes";
+@import "colors";
 
 .default {
   margin: 0 $reg;
@@ -32,13 +33,13 @@
     a {
       display: inline-block;
       padding: $small $large;
-      border: $xxsmall solid #404040;
-      background: #909090;
+      border: $xxsmall solid $darkgray;
+      background: $lightgray;
       text-decoration: none;
       color: initial;
     }
     a:hover {
-      background: #606060;
+      background: $gray;
     }
   }
 }
