@@ -1,8 +1,9 @@
-<h2>Navigation</h2>
 <ul id="navList">
   <li id="navHome" onclick="sceneSwitch(), mainPage()">Home</li>
-  <li id="nav2" onclick="sceneSwitch(), page2()">Page 2</li>
-  <li id="nav3" onclick="sceneSwitch(), page3()">Page 3</li>
-  <li id="nav4" onclick="sceneSwitch(), page4()">Page 4</li>
-  <li id="navLast" onclick="sceneSwitch(), lastPage()">Last Page</li>
+  <li id="nav2" onclick="sceneSwitch(), makeGallery('billie', '2')">Billie Eilish</li>
+  <li id="nav3" onclick="sceneSwitch(), makeGallery('childish', '4')">Childish Gambino</li>
+  <li id="nav4" onclick="sceneSwitch(), makeGallery('flora', '6')">Flora Cash</li>
+  <li id="navLast" onclick="sceneSwitch(), makeGallery('louis', '8')">Louis The Child</li>
+  <li id="navLast" onclick="sceneSwitch(), makeGallery('madeon', '8')">Madeon</li>
+  <li id="navLast" onclick="sceneSwitch(), makeGallery('sebastian', '2')">Sebastian Paul</li>
 </ul>

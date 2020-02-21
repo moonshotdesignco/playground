@@ -2,6 +2,17 @@
 @import "sizes";
 @import "colors";
 
+html {
+  background: $black;
+  color: $white;
+}
+
+body {
+  text: {
+    transform: lowercase;
+  }
+}
+
 .default {
   margin: 0 $reg;
   padding: $reg 0;
@@ -19,24 +30,24 @@
   }
 }
 
-.page2image {
+.galleryImage {
   width: 100%;
-  height: 100%;
 }
 
 #navList {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
   li {
-    display: inline-block;
+    // width: fit-content;
     padding: $small $large;
-    border: $xxsmall solid $darkgray;
-    background: $lightgray;
-    text-decoration: none;
-    color: initial;
+    margin: $xxxsmall $xxxsmall;
+    background: $darkgray;
+    cursor: pointer;
   }
   li:hover {
-    background: $gray;
+    background: $overlay;
   }
 }
