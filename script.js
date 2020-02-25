@@ -1,32 +1,7 @@
 document.addEventListener("touchstart", function() {}, false);
 
-function makeSection() {
-  var s = document.createElement("section");
-  document.body.insertAdjacentElement("afterbegin", s);
-}
-
-function makeHeadH() {
-  var headSec = document.getElementById("header");
-  var h = document.createElement("h1");
-  h.id = "hExternal";
-  h.className = "default big";
-  headSec.appendChild(h);
-}
-
-function makeNavPara() {
-  var navSec = document.getElementById("nav");
-  var para = document.createElement("p");
-  para.id = "navExternal";
-  para.className = "default";
-  navSec.appendChild(para);
-}
-
-function makeMainPara() {
-  var mainSec = document.getElementById("main");
-  var para = document.createElement("p");
-  para.className = "pExternal default";
-  mainSec.appendChild(para);
-}
+$("#hExternal").load("txt/head.txt");
+$("#dillonBlurb").load("txt/dillon.txt");
 
 function makeCopyPara() {
   var copySec = document.getElementById("copyright");
@@ -36,70 +11,43 @@ function makeCopyPara() {
   copySec.appendChild(para);
 }
 
-var i;
-var secCount = 4;
-for (i = 1; i <= secCount; i++) {
-  makeSection();
-}
-
-$("section").eq(0).attr("id", "header");
-$("section").eq(1).attr("id", "nav");
-$("section").eq(2).attr("id", "main");
-$("section").eq(3).attr("id", "copyright");
-
-document.onload = makeHeadH();
-document.onload = makeNavPara();
 document.onload = makeCopyPara();
 
-$("#hExternal").load("txt/head.txt");
-$("#navExternal").load("txt/nav.txt");
 $("#copyExternal").load("txt/copy.txt");
 
-document.onload = mainPage();
+function goHome() {
 
-function sceneSwitch() {
-  var c = document.getElementsByClassName("pExternal");
-  for (ch = 0; ch < c.length;) {
-    c[ch].remove();
+  var cg = document.getElementsByClassName("gallery");
+  for (cgi = 0; cgi < cg.length; cgi++) {
+    cg[cgi].style.display = "none";
   }
+
+  var cb = document.getElementsByClassName("navBtn");
+  for (cbi = 0; cbi < cb.length; cbi++) {
+    cb[cbi].classList.remove("active");
+  }
+
+  $("#dillonBlurb").show();
+
+  document.getElementById("navHome").classList.add("active");
 }
 
-function mainPage() {
-  var i;
-  var paraCount = 1;
-  for (i = 1; i <= paraCount; i++) {
-    makeMainPara();
+function sceneSwitch(e, artist) {
+  document.getElementById("dillonBlurb").style.display = "none";
+
+  // document.getElementsByClassName("galleryImage").style.display = "none";
+
+  var cg = document.getElementsByClassName("gallery");
+  for (cgi = 0; cgi < cg.length; cgi++) {
+    cg[cgi].style.display = "none";
   }
 
-  $(".pExternal").eq(0).load("txt/home.txt");
-}
-
-function makeGallery(artist, galleryCount) {
-  var i;
-  var paraCount = 1;
-  for (i = 1; i <= paraCount; i++) {
-    makeMainPara();
+  var cb = document.getElementsByClassName("navBtn");
+  for (cbi = 0; cbi < cb.length; cbi++) {
+    cb[cbi].classList.remove("active");
   }
 
-  var imgPara = document.getElementsByClassName("pExternal")[0];
-  imgPara.id = "gallery";
-  
-  function makeImg() {
-    var newImg = document.createElement("img");
-    newImg.className = "galleryImage";
-    newImg.setAttribute("loading", "lazy");
-    document.getElementById("gallery").appendChild(newImg);
-  }
+  document.getElementById("gallery" + artist).style.display = "block";
 
-  var i;
-  for (i = 1; i <= galleryCount; i++) {
-    makeImg();
-  }
-
-  var n;
-  var g = document.getElementsByClassName("galleryImage");
-  for (n = 0; n < galleryCount; n++) {
-    g[n].setAttribute("src", "img/" + artist + "/" + (n + 1) + ".jpg");
-  }
-
+  e.currentTarget.className += " active";
 }

@@ -30,32 +30,31 @@ body {
   }
 }
 
-.galleryImage {
-  width: 100%;
+#navList {
+  display: flex;
+  flex-wrap: wrap;
+  .navBtn {
+    border: none;
+    color: inherit;
+    padding: $small $large;
+    margin: $xxxsmall $xxxsmall;
+    background: $darkgray;
+    cursor: pointer;
+  }
+  .navBtn:hover, .navBtn.active {
+    background: $overlay;
+  }
 }
 
 #dillon {
   width: 400px;
 }
 
-#navList {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  li {
-    // width: fit-content;
-    padding: $small $large;
-    margin: $xxxsmall $xxxsmall;
-    background: $darkgray;
-    cursor: pointer;
-  }
-  li:hover {
-    background: $overlay;
-  }
+.gallery {
+  display: none;
 }
 
-.selected {
-  background: $overlay;
+.galleryImage {
+  width: 100%;
 }
+
