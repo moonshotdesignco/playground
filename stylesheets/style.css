@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #0a0a0a;
+  color: #fafafa; }
+
+body {
+  text-transform: lowercase; }
+
+.default {
+  margin: 0 1rem;
+  padding: 1rem 0; }
+
+.big {
+  font-size: 4rem; }
+
+.small {
+  font-size: 0.75rem; }
+
+.galleryImage {
+  width: 100%; }
+
+#navList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+  #navList li {
+    padding: 0.75rem 2rem;
+    margin: 0.25rem 0.25rem;
+    background: #444444;
+    cursor: pointer; }
+  #navList li:hover {
+    background: rgba(234, 96, 96, 0.75); }
