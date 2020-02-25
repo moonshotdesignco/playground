@@ -34,6 +34,10 @@ body {
   width: 100%;
 }
 
+#dillon {
+  width: 400px;
+}
+
 #navList {
   margin: 0;
   padding: 0;
@@ -50,4 +54,8 @@ body {
   li:hover {
     background: $overlay;
   }
+}
+
+.selected {
+  background: $overlay;
 }

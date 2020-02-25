@@ -1,3 +1,4 @@
+<img id="dillon" src="img/dillon/dillon.jpg"><br>
 tour photographer<br>
 instagram @brightsidedillon<br>
 email dillonjordan2544@gmail.com
