@@ -1,6 +1,7 @@
 @import "reset";
 @import "sizes";
 @import "colors";
+$fontstack: Helvetica, Arial, sans-serif;
 
 html {
   background: $black;
@@ -8,6 +9,9 @@ html {
 }
 
 body {
+  font: {
+    family: $fontstack;
+  }
   text: {
     transform: lowercase;
   }
@@ -32,12 +36,16 @@ body {
 
 #menuList, #navList {
   display: flex;
-  flex-wrap: wrap;
+  flex: {
+    wrap: wrap;
+  }
   .navBtn {
     border: none;
     color: inherit;
     font: inherit;
-    text-transform: inherit;
+    text: {
+      transform: inherit;
+    }
     padding: $small $large;
     margin: $xxxsmall $xxxsmall;
     background: $darkgray;
@@ -48,18 +56,9 @@ body {
   }
 }
 
-// #navList {
-//   display: none;
-// }
-
 #dillon {
   width: 100%;
-  // max-width: 400px;
 }
-
-// .gallery {
-//   display: none;
-// }
 
 .galleryImage {
   width: 100%;
