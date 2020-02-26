@@ -16,29 +16,32 @@
     <h1 id="hExternal" class="default big"></h1>
   </section>
   <section id="nav">
-    <p id="navList" class="default">
+    <p id="menuList" class="default">
       <button class="navBtn active" id="navHome" onclick="goHome()">Home</button>
-      <button class="navBtn" id="navBillie" onclick="sceneSwitch(event, 'Billie')">Billie Eilish</button>
-      <button class="navBtn" id="navChildish" onclick="sceneSwitch(event, 'Childish')">Childish Gambino</button>
-      <button class="navBtn" id="navFlora" onclick="sceneSwitch(event, 'Flora')">Flora Cash</button>
-      <button class="navBtn" id="navLouis" onclick="sceneSwitch(event, 'Louis')">Louis The Child</button>
-      <button class="navBtn" id="navMadeon" onclick="sceneSwitch(event, 'Madeon')">Madeon</button>
-      <button class="navBtn" id="navSebastian" onclick="sceneSwitch(event, 'Sebastian')">Sebastian Paul</button>
+      <button class="navBtn" id="navGalleries" onclick="toggleGalleries()">Galleries</button>
+    </p>
+    <p id="navList" class="default hidden">
+      <button class="navBtn galleryBtn" id="navBillie" onclick="sceneSwitch(event, 'Billie')">Billie Eilish</button>
+      <button class="navBtn galleryBtn" id="navChildish" onclick="sceneSwitch(event, 'Childish')">Childish Gambino</button>
+      <button class="navBtn galleryBtn" id="navFlora" onclick="sceneSwitch(event, 'Flora')">Flora Cash</button>
+      <button class="navBtn galleryBtn" id="navLouis" onclick="sceneSwitch(event, 'Louis')">Louis The Child</button>
+      <button class="navBtn galleryBtn" id="navMadeon" onclick="sceneSwitch(event, 'Madeon')">Madeon</button>
+      <button class="navBtn galleryBtn" id="navSebastian" onclick="sceneSwitch(event, 'Sebastian')">Sebastian Paul</button>
     </p>
   </section>
   <section id="content">
     <p id="dillonBlurb" class="default"></p>
-    <p id="galleryBillie" class="gallery default">
+    <p id="galleryBillie" class="gallery default hidden">
       <img loading="lazy" src="img/billie/1.jpg" class="galleryImage" id="galleryImageBillie">
       <img loading="lazy" src="img/billie/2.jpg" class="galleryImage" id="galleryImageBillie">
     </p>
-    <p id="galleryChildish" class="gallery default">
+    <p id="galleryChildish" class="gallery default hidden">
       <img loading="lazy" src="img/childish/1.jpg" class="galleryImage" id="galleryImageChildish">
       <img loading="lazy" src="img/childish/2.jpg" class="galleryImage" id="galleryImageChildish">
       <img loading="lazy" src="img/childish/3.jpg" class="galleryImage" id="galleryImageChildish">
       <img loading="lazy" src="img/childish/4.jpg" class="galleryImage" id="galleryImageChildish">
     </p>
-    <p id="galleryFlora" class="gallery default">
+    <p id="galleryFlora" class="gallery default hidden">
       <img loading="lazy" src="img/flora/1.jpg" class="galleryImage" id="galleryImageFlora">
       <img loading="lazy" src="img/flora/2.jpg" class="galleryImage" id="galleryImageFlora">
       <img loading="lazy" src="img/flora/3.jpg" class="galleryImage" id="galleryImageFlora">
@@ -46,7 +49,7 @@
       <img loading="lazy" src="img/flora/5.jpg" class="galleryImage" id="galleryImageFlora">
       <img loading="lazy" src="img/flora/6.jpg" class="galleryImage" id="galleryImageFlora">
     </p>
-    <p id="galleryLouis" class="gallery default">
+    <p id="galleryLouis" class="gallery default hidden">
       <img loading="lazy" src="img/louis/1.jpg" class="galleryImage" id="galleryImageLouis">
       <img loading="lazy" src="img/louis/2.jpg" class="galleryImage" id="galleryImageLouis">
       <img loading="lazy" src="img/louis/3.jpg" class="galleryImage" id="galleryImageLouis">
@@ -56,7 +59,7 @@
       <img loading="lazy" src="img/louis/7.jpg" class="galleryImage" id="galleryImageLouis">
       <img loading="lazy" src="img/louis/8.jpg" class="galleryImage" id="galleryImageLouis">
     </p>
-    <p id="galleryMadeon" class="gallery default">
+    <p id="galleryMadeon" class="gallery default hidden">
       <img loading="lazy" src="img/madeon/1.jpg" class="galleryImage" id="galleryImageMadeon">
       <img loading="lazy" src="img/madeon/2.jpg" class="galleryImage" id="galleryImageMadeon">
       <img loading="lazy" src="img/madeon/3.jpg" class="galleryImage" id="galleryImageMadeon">
@@ -66,7 +69,7 @@
       <img loading="lazy" src="img/madeon/7.jpg" class="galleryImage" id="galleryImageMadeon">
       <img loading="lazy" src="img/madeon/8.jpg" class="galleryImage" id="galleryImageMadeon">
     </p>
-    <p id="gallerySebastian" class="gallery default">
+    <p id="gallerySebastian" class="gallery default hidden">
       <img loading="lazy" src="img/sebastian/1.jpg" class="galleryImage" id="galleryImageSebastian">
       <img loading="lazy" src="img/sebastian/2.jpg" class="galleryImage" id="galleryImageSebastian">
     </p>

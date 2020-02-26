@@ -20,25 +20,27 @@ body {
 .small {
   font-size: 0.75rem; }
 
-#navList {
+#menuList, #navList {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
-  #navList .navBtn {
+  #menuList .navBtn, #navList .navBtn {
     border: none;
     color: inherit;
+    font: inherit;
+    text-transform: inherit;
     padding: 0.75rem 2rem;
     margin: 0.25rem 0.25rem;
     background: #444444;
     cursor: pointer; }
-  #navList .navBtn:hover, #navList .navBtn.active {
+  #menuList .navBtn:hover, #menuList .navBtn.active, #navList .navBtn:hover, #navList .navBtn.active {
     background: rgba(234, 96, 96, 0.75); }
 
 #dillon {
-  width: 400px; }
-
-.gallery {
-  display: none; }
+  width: 100%; }
 
 .galleryImage {
   width: 100%; }
+
+.hidden {
+  display: none !important; }

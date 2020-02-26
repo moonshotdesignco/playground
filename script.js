@@ -15,39 +15,61 @@ document.onload = makeCopyPara();
 
 $("#copyExternal").load("txt/copy.txt");
 
-function goHome() {
-
+function hideGalleries() {
   var cg = document.getElementsByClassName("gallery");
   for (cgi = 0; cgi < cg.length; cgi++) {
-    cg[cgi].style.display = "none";
+    cg[cgi].classList.add("hidden");
   }
+}
 
+function navBtnRemoveActive() {
   var cb = document.getElementsByClassName("navBtn");
   for (cbi = 0; cbi < cb.length; cbi++) {
     cb[cbi].classList.remove("active");
   }
+}
 
-  $("#dillonBlurb").show();
+function galBtnRemoveActive() {
+  var cb = document.getElementsByClassName("galleryBtn");
+  for (cbi = 0; cbi < cb.length; cbi++) {
+    cb[cbi].classList.remove("active");
+  }
+}
+
+function goHome() {
+  hideGalleries();
+
+  navBtnRemoveActive();
+
+  document.getElementById("navList").classList.add("hidden");
+
+  document.getElementById("dillonBlurb").classList.remove("hidden");
 
   document.getElementById("navHome").classList.add("active");
 }
 
+function toggleGalleries() {
+  document.getElementById("dillonBlurb").classList.add("hidden");
+
+  document.getElementById("navHome").classList.remove("active");
+
+  document.getElementById("navList").classList.remove("hidden");
+
+  hideGalleries();
+
+  navBtnRemoveActive();
+
+  document.getElementById("navGalleries").classList.add("active");
+}
+
 function sceneSwitch(e, artist) {
-  document.getElementById("dillonBlurb").style.display = "none";
+  document.getElementById("dillonBlurb").classList.add("hidden");
 
-  // document.getElementsByClassName("galleryImage").style.display = "none";
+  hideGalleries();
 
-  var cg = document.getElementsByClassName("gallery");
-  for (cgi = 0; cgi < cg.length; cgi++) {
-    cg[cgi].style.display = "none";
-  }
+  galBtnRemoveActive();
 
-  var cb = document.getElementsByClassName("navBtn");
-  for (cbi = 0; cbi < cb.length; cbi++) {
-    cb[cbi].classList.remove("active");
-  }
-
-  document.getElementById("gallery" + artist).style.display = "block";
+  document.getElementById("gallery" + artist).classList.remove("hidden");
 
   e.currentTarget.className += " active";
 }

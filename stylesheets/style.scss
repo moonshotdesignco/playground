@@ -30,12 +30,14 @@ body {
   }
 }
 
-#navList {
+#menuList, #navList {
   display: flex;
   flex-wrap: wrap;
   .navBtn {
     border: none;
     color: inherit;
+    font: inherit;
+    text-transform: inherit;
     padding: $small $large;
     margin: $xxxsmall $xxxsmall;
     background: $darkgray;
@@ -46,15 +48,23 @@ body {
   }
 }
 
+// #navList {
+//   display: none;
+// }
+
 #dillon {
-  width: 400px;
+  width: 100%;
+  // max-width: 400px;
 }
 
-.gallery {
-  display: none;
-}
+// .gallery {
+//   display: none;
+// }
 
 .galleryImage {
   width: 100%;
 }
 
+.hidden {
+  display: none !important;
+}
