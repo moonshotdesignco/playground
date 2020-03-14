@@ -1,2 +1,3 @@
-Copyright &copy; 2020 Dillon Jordan Photos<br>
-Site designed by Moonshot Design Co.
+&copy; 2020 Dillon Jordan Photos<br>
+Designed by <a href="https://moonshotdesignco.com">Moonshot Design Co.</a><br>
+All rights reserved
