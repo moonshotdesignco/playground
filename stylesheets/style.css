@@ -19,6 +19,10 @@ a {
   color: inherit;
 }
 
+a:hover, a:active, a:focus {
+  color: #808080;
+}
+
 .default {
   margin: 0 1rem;
   padding: 1rem 0;
