@@ -1,47 +1,68 @@
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 html {
   background: #0a0a0a;
-  color: #fafafa; }
+  color: #fafafa;
+}
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .default {
   margin: 0 1rem;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+}
 
 .big {
-  font-size: 4rem; }
+  font-size: 4rem;
+}
 
 .small {
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+}
 
 #menuList, #navList {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
-  #menuList .navBtn, #navList .navBtn {
-    border: none;
-    color: inherit;
-    font: inherit;
-    text-transform: inherit;
-    padding: 0.75rem 2rem;
-    margin: 0.25rem 0.25rem;
-    background: #444444;
-    cursor: pointer; }
-  #menuList .navBtn:hover, #menuList .navBtn.active, #navList .navBtn:hover, #navList .navBtn.active {
-    background: rgba(234, 96, 96, 0.75); }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#menuList .navBtn, #navList .navBtn {
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  padding: 0.75rem 2rem;
+  margin: 0.25rem 0.25rem;
+  background: #444444;
+  cursor: pointer;
+}
+
+#menuList .navBtn:hover, #menuList .navBtn.active, #navList .navBtn:hover, #navList .navBtn.active {
+  background: rgba(234, 96, 96, 0.75);
+}
 
 #dillon {
-  width: 100%; }
+  width: 100%;
+}
 
 .galleryImage {
-  width: 100%; }
+  width: 100%;
+}
 
 .hidden {
-  display: none !important; }
+  display: none !important;
+}

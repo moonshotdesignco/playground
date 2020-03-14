@@ -17,6 +17,13 @@ body {
   }
 }
 
+a {
+  text: {
+    decoration: none;
+  }
+  color: inherit;
+}
+
 .default {
   margin: 0 $reg;
   padding: $reg 0;
